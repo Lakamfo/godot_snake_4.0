@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcbtvan4ocd0l"]
+
+[ext_resource type="Script" path="res://scripts/tail.gd" id="1_gibyl"]
+
+[sub_resource type="Gradient" id="Gradient_7vqyv"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.114897, 0.114897, 0.114897, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_khuse"]
+gradient = SubResource("Gradient_7vqyv")
+width = 50
+height = 50
+
+[node name="tail" type="Node2D" groups=["tail"]]
+position = Vector2(-25, -25)
+script = ExtResource("1_gibyl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_khuse")

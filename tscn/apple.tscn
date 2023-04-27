@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfpsxxtol6nt7"]
+
+[ext_resource type="Script" path="res://scripts/apple.gd" id="1_hmedi"]
+
+[sub_resource type="Gradient" id="Gradient_5fjs1"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.394573, 0.0269259, 0.0273864, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lqqev"]
+gradient = SubResource("Gradient_5fjs1")
+width = 50
+height = 50
+
+[node name="apple" type="Node2D"]
+position = Vector2(-25, -25)
+script = ExtResource("1_hmedi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_lqqev")

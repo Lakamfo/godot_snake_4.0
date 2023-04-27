@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://hjsxelaijvpw"]
+
+[ext_resource type="Script" path="res://scripts/head.gd" id="1_ddo52"]
+
+[sub_resource type="Gradient" id="Gradient_cuiy1"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.176471, 0.176471, 0.176471, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jce7a"]
+gradient = SubResource("Gradient_cuiy1")
+width = 50
+height = 50
+
+[node name="head" type="Node2D" groups=["head"]]
+script = ExtResource("1_ddo52")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_jce7a")

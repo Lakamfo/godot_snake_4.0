@@ -1,0 +1,179 @@
+[gd_scene load_steps=7 format=3 uid="uid://c46cblqb88v2a"]
+
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_mto6p"]
+[ext_resource type="Script" path="res://scripts/ui.gd" id="2_b5req"]
+[ext_resource type="PackedScene" uid="uid://hjsxelaijvpw" path="res://tscn/head.tscn" id="3_6ntgc"]
+[ext_resource type="PackedScene" uid="uid://bfpsxxtol6nt7" path="res://tscn/apple.tscn" id="4_d3p3o"]
+
+[sub_resource type="Gradient" id="Gradient_utanh"]
+colors = PackedColorArray(0, 0.388235, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6wkip"]
+gradient = SubResource("Gradient_utanh")
+width = 500
+height = 500
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(2.351, 0)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_mto6p")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(250.5, 249.5)
+texture = SubResource("GradientTexture2D_6wkip")
+
+[node name="table" type="Node2D" parent="."]
+
+[node name="CanvasGroup" type="CanvasGroup" parent="table"]
+modulate = Color(1, 1, 1, 0.443137)
+
+[node name="Line2D2" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(100, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(150, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(200, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(250, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(300, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D7" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(350, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D8" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(400, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D9" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(450, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(50, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D10" type="Line2D" parent="table/CanvasGroup"]
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D11" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 50)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D12" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 100)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D13" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 150)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 200)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D15" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 250)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D16" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 300)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D17" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 350)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D18" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 400)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D19" type="Line2D" parent="table/CanvasGroup"]
+position = Vector2(0, 450)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="ui" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="ui" groups=["tail"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_b5req")
+
+[node name="score" type="Label" parent="ui/Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -26.0
+offset_right = 48.0
+grow_vertical = 0
+text = "Score:"
+
+[node name="head" parent="." instance=ExtResource("3_6ntgc")]
+position = Vector2(275, 275)
+
+[node name="apple" parent="." instance=ExtResource("4_d3p3o")]
+position = Vector2(425, 25)
