@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var time_period = 0.25
 var time = 0.0
-@onready var apple_period = 5
+@onready var apple_period = 3
 var apple_timer = 0.0
 
 @onready var apple_scene = preload("res://tscn/apple.tscn")
@@ -23,6 +23,9 @@ func _process(delta):
 		
 		get_tree().call_group("head","_tick")
 		get_tree().call_group("tail","_tick")
+	
+	if get_tree().get_first_node_in_group("apple") != null:
+		return
 	
 	if apple_timer >= apple_period:
 		var apple = apple_scene.instantiate()
