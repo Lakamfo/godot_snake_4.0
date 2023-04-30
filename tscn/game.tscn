@@ -1,9 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://c46cblqb88v2a"]
+[gd_scene load_steps=13 format=3 uid="uid://c46cblqb88v2a"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_mto6p"]
+[ext_resource type="PackedScene" uid="uid://dqq8u1frcloul" path="res://tscn/table.tscn" id="2_3liya"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="2_b5req"]
 [ext_resource type="PackedScene" uid="uid://hjsxelaijvpw" path="res://tscn/head.tscn" id="3_6ntgc"]
+[ext_resource type="Script" path="res://tscn/buttons.gd" id="3_m36su"]
+[ext_resource type="Texture2D" uid="uid://8lg4jtx0ndnn" path="res://buttons/Button_Idle.png" id="3_py5ay"]
 [ext_resource type="PackedScene" uid="uid://bfpsxxtol6nt7" path="res://tscn/apple.tscn" id="4_d3p3o"]
+[ext_resource type="Texture2D" uid="uid://e6lwq64e8qbe" path="res://buttons/Button_Pushed.png" id="4_muw2m"]
 [ext_resource type="AudioStream" uid="uid://g6baofafq76g" path="res://apple_pickup.wav" id="5_oc2pg"]
 [ext_resource type="Script" path="res://tscn/apple_sound.gd" id="6_ipsyu"]
 
@@ -25,133 +29,7 @@ script = ExtResource("1_mto6p")
 position = Vector2(250.5, 249.5)
 texture = SubResource("GradientTexture2D_6wkip")
 
-[node name="table" type="Node2D" parent="."]
-
-[node name="CanvasGroup" type="CanvasGroup" parent="table"]
-modulate = Color(1, 1, 1, 0.443137)
-
-[node name="Line2D2" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(100, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D3" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(150, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D4" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(200, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D5" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(250, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D6" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(300, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D7" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(350, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D8" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(400, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D9" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(450, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(50, 0)
-points = PackedVector2Array(0, 0, 0, 500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D10" type="Line2D" parent="table/CanvasGroup"]
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D11" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 50)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D12" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 100)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D13" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 150)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D14" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 200)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D15" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 250)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D16" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 300)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D17" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 350)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D18" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 400)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D19" type="Line2D" parent="table/CanvasGroup"]
-position = Vector2(0, 450)
-rotation = 1.5708
-points = PackedVector2Array(0, 0, 0, -500)
-width = 1.0
-default_color = Color(0, 0, 0, 1)
+[node name="table" parent="." instance=ExtResource("2_3liya")]
 
 [node name="ui" type="CanvasLayer" parent="."]
 
@@ -174,6 +52,82 @@ offset_right = 48.0
 grow_vertical = 0
 text = "Score:"
 
+[node name="buttons" type="Control" parent="ui/Control"]
+modulate = Color(1, 1, 1, 0.254902)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_m36su")
+metadata/_edit_use_anchors_ = true
+
+[node name="button_up" type="TextureButton" parent="ui/Control/buttons"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_right = 50.0
+offset_bottom = 100.0
+grow_horizontal = 2
+pivot_offset = Vector2(50, 50)
+texture_normal = ExtResource("3_py5ay")
+texture_pressed = ExtResource("4_muw2m")
+stretch_mode = 0
+
+[node name="button_down" type="TextureButton" parent="ui/Control/buttons"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -100.0
+offset_right = 50.0
+grow_horizontal = 2
+grow_vertical = 0
+rotation = -3.14159
+pivot_offset = Vector2(50, 50)
+texture_normal = ExtResource("3_py5ay")
+texture_pressed = ExtResource("4_muw2m")
+stretch_mode = 0
+
+[node name="button_left" type="TextureButton" parent="ui/Control/buttons"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = 50.0
+grow_vertical = 2
+rotation = -1.5708
+pivot_offset = Vector2(50, 50)
+texture_normal = ExtResource("3_py5ay")
+texture_pressed = ExtResource("4_muw2m")
+stretch_mode = 0
+
+[node name="button_right" type="TextureButton" parent="ui/Control/buttons"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -50.0
+offset_bottom = 50.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 1.5708
+pivot_offset = Vector2(50, 50)
+texture_normal = ExtResource("3_py5ay")
+texture_pressed = ExtResource("4_muw2m")
+stretch_mode = 0
+
 [node name="head" parent="." instance=ExtResource("3_6ntgc")]
 position = Vector2(275, 275)
 
@@ -184,3 +138,12 @@ position = Vector2(425, 25)
 stream = ExtResource("5_oc2pg")
 volume_db = -12.0
 script = ExtResource("6_ipsyu")
+
+[connection signal="button_down" from="ui/Control/buttons/button_up" to="ui/Control/buttons" method="_on_button_up_button_down"]
+[connection signal="button_up" from="ui/Control/buttons/button_up" to="ui/Control/buttons" method="_on_button_up_button_up"]
+[connection signal="button_down" from="ui/Control/buttons/button_down" to="ui/Control/buttons" method="_on_button_down_button_down"]
+[connection signal="button_up" from="ui/Control/buttons/button_down" to="ui/Control/buttons" method="_on_button_down_button_up"]
+[connection signal="button_down" from="ui/Control/buttons/button_left" to="ui/Control/buttons" method="_on_button_left_button_down"]
+[connection signal="button_up" from="ui/Control/buttons/button_left" to="ui/Control/buttons" method="_on_button_left_button_up"]
+[connection signal="button_down" from="ui/Control/buttons/button_right" to="ui/Control/buttons" method="_on_button_right_button_down"]
+[connection signal="button_up" from="ui/Control/buttons/button_right" to="ui/Control/buttons" method="_on_button_right_button_up"]

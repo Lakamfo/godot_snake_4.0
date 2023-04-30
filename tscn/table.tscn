@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://dqq8u1frcloul"]
+
+[node name="table" type="Node2D"]
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+modulate = Color(1, 1, 1, 0.443137)
+
+[node name="Line2D2" type="Line2D" parent="CanvasGroup"]
+position = Vector2(100, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="CanvasGroup"]
+position = Vector2(150, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="CanvasGroup"]
+position = Vector2(200, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="CanvasGroup"]
+position = Vector2(250, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D6" type="Line2D" parent="CanvasGroup"]
+position = Vector2(300, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D7" type="Line2D" parent="CanvasGroup"]
+position = Vector2(350, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D8" type="Line2D" parent="CanvasGroup"]
+position = Vector2(400, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D9" type="Line2D" parent="CanvasGroup"]
+position = Vector2(450, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="CanvasGroup"]
+position = Vector2(50, 0)
+points = PackedVector2Array(0, 0, 0, 500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D10" type="Line2D" parent="CanvasGroup"]
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D11" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 50)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D12" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 100)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D13" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 150)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D14" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 200)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D15" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 250)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D16" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 300)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D17" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 350)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D18" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 400)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D19" type="Line2D" parent="CanvasGroup"]
+position = Vector2(0, 450)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, -500)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
