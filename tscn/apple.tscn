@@ -11,7 +11,7 @@ gradient = SubResource("Gradient_5fjs1")
 width = 50
 height = 50
 
-[node name="apple" type="Node2D"]
+[node name="apple" type="Node2D" groups=["apple"]]
 position = Vector2(-25, -25)
 script = ExtResource("1_hmedi")
 
