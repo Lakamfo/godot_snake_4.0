@@ -48,6 +48,7 @@ func _tick():
 				apple.queue_free()
 				_apple()
 				Singletone.score += 50
+				Singletone.apple_sound.play()
 				break
 
 func _apple():
@@ -60,3 +61,5 @@ func _apple():
 	
 	tails.push_back(_tail)
 	get_parent().add_child.call_deferred(_tail)
+	
+	_tail.color(Color(0.5 - (tails.size() * 0.1),0.5 - (tails.size() * 0.1),0.5 - (tails.size() * 0.1)))

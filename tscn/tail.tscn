@@ -4,7 +4,7 @@
 
 [sub_resource type="Gradient" id="Gradient_7vqyv"]
 offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0.114897, 0.114897, 0.114897, 1)
+colors = PackedColorArray(1, 1, 1, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_khuse"]
 gradient = SubResource("Gradient_7vqyv")
@@ -16,4 +16,5 @@ position = Vector2(-25, -25)
 script = ExtResource("1_gibyl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.137255, 0.137255, 0.137255, 1)
 texture = SubResource("GradientTexture2D_khuse")

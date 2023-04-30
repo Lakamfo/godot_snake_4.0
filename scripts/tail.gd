@@ -6,6 +6,8 @@ extends Node2D
 
 @onready var head 
 
+@onready var sprite : Sprite2D
+
 func _ready():
 	head = get_tree().get_nodes_in_group("head")[0]
 
@@ -28,4 +30,9 @@ func _tick():
 				apple.queue_free()
 				head._apple()
 				Singletone.score += 50
+				Singletone.apple_sound.play()
 				break
+
+func color(X):
+	sprite = $Sprite2D
+	sprite.modulate = X

@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://c46cblqb88v2a"]
+[gd_scene load_steps=9 format=3 uid="uid://c46cblqb88v2a"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_mto6p"]
 [ext_resource type="Script" path="res://scripts/ui.gd" id="2_b5req"]
 [ext_resource type="PackedScene" uid="uid://hjsxelaijvpw" path="res://tscn/head.tscn" id="3_6ntgc"]
 [ext_resource type="PackedScene" uid="uid://bfpsxxtol6nt7" path="res://tscn/apple.tscn" id="4_d3p3o"]
+[ext_resource type="AudioStream" uid="uid://g6baofafq76g" path="res://apple_pickup.wav" id="5_oc2pg"]
+[ext_resource type="Script" path="res://tscn/apple_sound.gd" id="6_ipsyu"]
 
 [sub_resource type="Gradient" id="Gradient_utanh"]
 colors = PackedColorArray(0, 0.388235, 0, 1, 1, 1, 1, 1)
@@ -177,3 +179,8 @@ position = Vector2(275, 275)
 
 [node name="apple" parent="." instance=ExtResource("4_d3p3o")]
 position = Vector2(425, 25)
+
+[node name="apple_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_oc2pg")
+volume_db = -12.0
+script = ExtResource("6_ipsyu")
