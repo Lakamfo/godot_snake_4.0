@@ -17,7 +17,7 @@ func _process(delta):
 
 func _tick():
 	if tails.size() > 1:
-		if position + vector * 50 == previous_position:
+		if position_snap(position + vector * 50) == previous_position:
 			vector = last_vector
 		else:
 			last_vector = vector
@@ -29,15 +29,7 @@ func _tick():
 	elif vector.y != 0:
 		position.y += vector.y * 50
 	
-	if position.x > 500:
-		position.x = 25
-	elif position.y > 500:
-		position.y = 25
-	
-	if position.x < 0:
-		position.x = 475
-	elif position.y < 0:
-		position.y = 475
+	position = position_snap(position)
 	
 	for apple in Singletone.apples:
 		if apple != null:
@@ -61,3 +53,18 @@ func _apple():
 	get_parent().add_child.call_deferred(_tail)
 	
 	_tail.color(Color(0.5 - (tails.size() * 0.1),0.5 - (tails.size() * 0.1),0.5 - (tails.size() * 0.1)))
+
+func position_snap(_position : Vector2):
+	var pos = _position
+	
+	if pos.x > 500:
+		pos.x = 25
+	elif pos.y > 500:
+		pos.y = 25
+	
+	if pos.x < 0:
+		pos.x = 475
+	elif pos.y < 0:
+		pos.y = 475
+	
+	return pos
