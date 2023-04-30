@@ -4,3 +4,6 @@ extends Control
 
 func _tick():
 	score.text = "Score: " + str(Singletone.score)
+
+
+

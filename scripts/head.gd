@@ -5,11 +5,9 @@ class_name head
 
 @onready var tails = []
 
-
 var last_vector = Vector2.RIGHT
 var vector = Vector2.ZERO
 var previous_position = Vector2(275,275)
-
 
 func _process(delta):
 	var _vector = Vector2(Input.get_axis("ui_left","ui_right"),Input.get_axis("ui_up","ui_down"))
@@ -17,12 +15,12 @@ func _process(delta):
 	if _vector != Vector2.ZERO:
 		vector = _vector
 
-
 func _tick():
-	if vector != Vector2.ZERO:
-		last_vector = vector
-	else:
-		vector = last_vector
+	if tails.size() > 1:
+		if position + vector * 50 == previous_position:
+			vector = last_vector
+		else:
+			last_vector = vector
 	
 	previous_position = position
 	

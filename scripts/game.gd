@@ -7,6 +7,9 @@ var apple_timer = 0.0
 
 @onready var apple_scene = preload("res://tscn/apple.tscn")
 
+func _ready():
+	Singletone.score = 0
+
 var apple_positions = [
 	475,425,375,325,275,225,175,125,75,25
 ]
